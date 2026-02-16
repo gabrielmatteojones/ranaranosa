@@ -1,39 +1,166 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{{ page.title }}</title>
 
-    {% include meta.html %}
+    
+  	<style type="text/css">#block5 .block-title h3 {border-color:#333333;}#block5 .block-title h2 {border-color:#333333;}#block5 .block-content {background-color:#ebebeb;}#block5 .block-content {border-color:#333333;}#block5 .block-title h2 {border-color:#333333;}#block5 .block-subtitle h3 {border-color:#333333;}#block5 .block-title h2 {color:#ffffff;}#block5 .block-title h2 {background: #7faddc;background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7faddc), to(#5191cf));background: -webkit-linear-gradient(top, #7faddc, #5191cf);background: -moz-linear-gradient(top, #7faddc, #5191cf);background: -ms-linear-gradient(top, #7faddc, #5191cf);background: -o-linear-gradient(top, #7faddc, #5191cf);;}#block5 .block-subtitle h3 {color:#ffffff;}#block5 .block-subtitle h3 {background-color:#5191cf;}#block5 .ul-block-menu li {background-color:#ffffff;}#block5 .ul-block-menu li a {color:#093663;}#block5 .ul-block-menu li {border-color:#5191cf;}#block5 .ul-block-menu li:hover {background-color:#5191cf;}#block32 .block-title h2 {border-color:#1a60a8;}#block32 .block-title h3 {border-color:#1a60a8;}#block32 .block-content {background-color:#ffffff;}#block32 .block-content {border-color:#1a60a8;}#block32 .block-title h2 {border-color:#1a60a8;}#block32 .block-subtitle h3 {border-color:#1a60a8;}#block32 .block-title h2 {color:#ffffff;}#block32 .block-title h2 {background: #4a92d4;background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4a92d4), to(#267ecc));background: -webkit-linear-gradient(top, #4a92d4, #267ecc);background: -moz-linear-gradient(top, #4a92d4, #267ecc);background: -ms-linear-gradient(top, #4a92d4, #267ecc);background: -o-linear-gradient(top, #4a92d4, #267ecc);;}#block32 .block-subtitle h3 {color:#ffffff;}#block32 .block-subtitle h3 {background-color:#267ecc;}#block32 .ul-block-menu li {background-color:#ffffff;}#block32 .ul-block-menu li a {color:#093663;}#block32 .ul-block-menu li {border-color:#2b79bb;}#block32 .ul-block-menu li:hover {background-color:#2b79bb;}#block34 .block-title h3 {border-color:#1a60a8;}#block34 .block-title h2 {border-color:#1a60a8;}#block34 .block-content {background-color:#ffffff;}#block34 .block-content {border-color:#1a60a8;}#block34 .block-title h2 {border-color:#1a60a8;}#block34 .block-subtitle h3 {border-color:#1a60a8;}#block34 .block-title h2 {color:#ffffff;}#block34 .block-title h2 {background: #4a92d4;background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4a92d4), to(#267ecc));background: -webkit-linear-gradient(top, #4a92d4, #267ecc);background: -moz-linear-gradient(top, #4a92d4, #267ecc);background: -ms-linear-gradient(top, #4a92d4, #267ecc);background: -o-linear-gradient(top, #4a92d4, #267ecc);;}#block34 .block-subtitle h3 {color:#ffffff;}#block34 .block-subtitle h3 {background-color:#267ecc;}#block34 .ul-block-menu li {background-color:#ffffff;}#block34 .ul-block-menu li a {color:#093663;}#block34 .ul-block-menu li {border-color:#2b79bb;}#block34 .ul-block-menu li:hover {background-color:#2b79bb;}#block35 .block-title h3 {border-color:#35608B;}#block35 .block-title h2 {border-color:#35608B;}#block35 .block-content {background-color:#ffffff;}#block35 .block-content {border-color:#35608B;}#block35 .block-title h2 {border-color:#35608B;}#block35 .block-subtitle h3 {border-color:#35608B;}#block35 .block-title h2 {color:#ffffff;}#block35 .block-title h2 {background: #35608B;;}#block35 .block-subtitle h3 {color:#ffffff;}#block35 .block-subtitle h3 {background-color:#35608B;}#block35 .ul-block-menu li {background-color:#ffffff;}#block35 .ul-block-menu li a {color:#093663;}#block35 .ul-block-menu li {border-color:#2b79bb;}#block35 .ul-block-menu li:hover {background-color:#2b79bb;}#block36 .block-title h2 {border-color:#1a60a8;}#block36 .block-title h3 {border-color:#1a60a8;}#block36 .block-content {background-color:#ffffff;}#block36 .block-content {border-color:#1a60a8;}#block36 .block-title h2 {border-color:#1a60a8;}#block36 .block-subtitle h3 {border-color:#1a60a8;}#block36 .block-title h2 {color:#ffffff;}#block36 .block-title h2 {background: #4a92d4;background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4a92d4), to(#267ecc));background: -webkit-linear-gradient(top, #4a92d4, #267ecc);background: -moz-linear-gradient(top, #4a92d4, #267ecc);background: -ms-linear-gradient(top, #4a92d4, #267ecc);background: -o-linear-gradient(top, #4a92d4, #267ecc);;}#block36 .block-subtitle h3 {color:#ffffff;}#block36 .block-subtitle h3 {background-color:#267ecc;}#block36 .ul-block-menu li {background-color:#ffffff;}#block36 .ul-block-menu li a {color:#093663;}#block36 .ul-block-menu li {border-color:#2b79bb;}#block36 .ul-block-menu li:hover {background-color:#2b79bb;}#block37 .block-title h3 {border-color:#1a60a8;}#block37 .block-title h2 {border-color:#1a60a8;}#block37 .block-content {background-color:#ffffff;}#block37 .block-content {border-color:#1a60a8;}#block37 .block-title h2 {border-color:#1a60a8;}#block37 .block-subtitle h3 {border-color:#1a60a8;}#block37 .block-title h2 {color:#ffffff;}#block37 .block-title h2 {background: #4a92d4;background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4a92d4), to(#267ecc));background: -webkit-linear-gradient(top, #4a92d4, #267ecc);background: -moz-linear-gradient(top, #4a92d4, #267ecc);background: -ms-linear-gradient(top, #4a92d4, #267ecc);background: -o-linear-gradient(top, #4a92d4, #267ecc);;}#block37 .block-subtitle h3 {color:#ffffff;}#block37 .block-subtitle h3 {background-color:#267ecc;}#block37 .ul-block-menu li {background-color:#ffffff;}#block37 .ul-block-menu li a {color:#093663;}#block37 .ul-block-menu li {border-color:#2b79bb;}#block37 .ul-block-menu li:hover {background-color:#2b79bb;}#block40 .block-title h2 {border-color:#333333;}#block40 .block-title h3 {border-color:#333333;}#block40 .block-content {background-color:#f2e102;}#block40 .block-content {border-color:#333333;}#block40 .block-title h2 {border-color:#333333;}#block40 .block-subtitle h3 {border-color:#333333;}#block40 .block-title h2 {color:#ffffff;}#block40 .block-title h2 {background: #deda12;background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#deda12), to(#f2ec18));background: -webkit-linear-gradient(top, #deda12, #f2ec18);background: -moz-linear-gradient(top, #deda12, #f2ec18);background: -ms-linear-gradient(top, #deda12, #f2ec18);background: -o-linear-gradient(top, #deda12, #f2ec18);;}#block40 .block-subtitle h3 {color:#ffffff;}#block40 .block-subtitle h3 {background-color:#edeb40;}#block40 .ul-block-menu li {background-color:#ffffff;}#block40 .ul-block-menu li a {color:#093663;}#block40 .ul-block-menu li {border-color:#eddb12;}#block40 .ul-block-menu li:hover {background-color:#dacc07;}#block41 .block-title h2 {border-color:#1a60a8;}#block41 .block-title h3 {border-color:#1a60a8;}#block41 .block-content {background-color:#ffffff;}#block41 .block-content {border-color:#1a60a8;}#block41 .block-title h2 {border-color:#1a60a8;}#block41 .block-subtitle h3 {border-color:#1a60a8;}#block41 .block-title h2 {color:#ffffff;}#block41 .block-title h2 {background: #4a92d4;background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4a92d4), to(#267ecc));background: -webkit-linear-gradient(top, #4a92d4, #267ecc);background: -moz-linear-gradient(top, #4a92d4, #267ecc);background: -ms-linear-gradient(top, #4a92d4, #267ecc);background: -o-linear-gradient(top, #4a92d4, #267ecc);;}#block41 .block-subtitle h3 {color:#ffffff;}#block41 .block-subtitle h3 {background-color:#267ecc;}#block41 .ul-block-menu li {background-color:#ffffff;}#block41 .ul-block-menu li a {color:#093663;}#block41 .ul-block-menu li {border-color:#2b79bb;}#block41 .ul-block-menu li:hover {background-color:#2b79bb;}#block42 .block-title h3 {border-color:#1a60a8;}#block42 .block-title h2 {border-color:#1a60a8;}#block42 .block-content {background-color:#ffffff;}#block42 .block-content {border-color:#1a60a8;}#block42 .block-title h2 {border-color:#1a60a8;}#block42 .block-subtitle h3 {border-color:#1a60a8;}#block42 .block-title h2 {color:#ffffff;}#block42 .block-title h2 {background: #4a92d4;background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4a92d4), to(#267ecc));background: -webkit-linear-gradient(top, #4a92d4, #267ecc);background: -moz-linear-gradient(top, #4a92d4, #267ecc);background: -ms-linear-gradient(top, #4a92d4, #267ecc);background: -o-linear-gradient(top, #4a92d4, #267ecc);;}#block42 .block-subtitle h3 {color:#ffffff;}#block42 .block-subtitle h3 {background-color:#267ecc;}#block42 .ul-block-menu li {background-color:#ffffff;}#block42 .ul-block-menu li a {color:#093663;}#block42 .ul-block-menu li {border-color:#2b79bb;}#block42 .ul-block-menu li:hover {background-color:#2b79bb;}</style>
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  
+  
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+<header class="Header Headroom--fixed js-Headroom u-hiddenPrint Headroom Headroom--not-bottom Headroom--pinned Headroom--top" style="position: fixed; top: 0px;">
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
+  <div class="Header-banner ">
+  	    <div class="Header-owner Headroom-hideme ">
+               <a href="https://web.archive.org/web/20211107012005/http://www.regione.fvg.it/rafvg/cms/RAFVG/"><span>Regione Autonoma Friuli Venezia Giulia</span></a>
+      	<div class="Header-languages">
+      	              
       </div>
-    </div>
+      <div class="Header-user hidden-xs">
+ 	       
+		 	     			   
+                            	  </div>
 
+    </div>
+      </div>
+
+    <div class="Header-navbar u-background-50">
+    <div class="u-layout-wide Grid Grid--alignMiddle u-layoutCenter">
+      <div class="Header-logo Grid-cell" aria-hidden="true">
+                	 <a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/index.php" tabindex="-1">
+        	 	<img src="https://web.archive.org/web/20211107012005im_/https://www.comune.fontanafredda.pn.it/zf/index.php/kamaleonte/index/logo/preview/0" alt="Logo Comune">        	 </a>
+              </div>
+
+      <div class="Header-title Grid-cell">
+        <h1 class="Header-titleLink">
+          <a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/">
+            <style type="text/css">
+/*inizio blocco ICONE INTRO in apertura*/
+#block35 .fa {display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-size: 1.25em !important;
+}
+
+#block35 a{
+  font-size: 1.15em !important;
+}
+
+#block35 .u-textCenter{
+  text-align:center !important;
+}
+
+#block35 .u-borderRadius-m.u-text-h5.u-textCenter.u-padding-all-m a{
+  color:white !important;
+}
+#block35 .u-borderRadius-m {
+border-radius:0 !important;
+}
+/* fine blocco ICONE INTRO in apertura*/
+
+/*inizio blocco BANNER secondari*/
+#block36 .fa {display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-size: 1.25em !important;
+}
+
+#block36 a{
+  font-size: 1.15em !important;
+}
+
+#block36 .u-textCenter{
+  text-align:center !important;
+}
+
+#block36 .u-borderRadius-m.u-text-h5.u-textCenter.u-padding-all-m a{
+  color:white !important;
+}
+#block36 .u-borderRadius-m {
+border-radius:0 !important;
+}
+/* fine blocco BANNER secondari*/
+
+/* INIZIO blocco news */
+/* box con immagine e testo */
+#block10 .u-nbfc.u-border-all-xxs.u-color-grey-30.u-background-white{
+  height: 550px !important;
+}
+#block10 .u-text-r-l.u-padding-r-all.u-layout-prose{
+  height: 330px;
+  position: relative;
+}
+#block10 .u-text-r-l.u-padding-r-all.u-layout-prose:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 80px;
+}
+#block10 .u-text-r-l.u-padding-r-all.u-layout-prose:after{
+  bottom: 0;
+  background-image: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+#block10 .u-text-r-l.u-padding-r-all.u-nbfc.u-background-white.block-italia.block-content.block-content-news {
+margin:0px !important;
+}
+/* Fine blocco news */
+</style>
+
+Comune di Fontanafredda<br>
+            <small>Portale Istituzionale</small>
+          </a>
+        </h1>
+      </div>
+	
+      <div class="Header-searchTrigger Grid-cell">
+              <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-search " title="attiva il form di ricerca" aria-label="attiva il form di ricerca" aria-hidden="false">
+        </button>
+        <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-close u-hidden " title="disattiva il form di ricerca" aria-label="disattiva il form di ricerca" aria-hidden="true">
+        </button>
+            </div>
+
+      <div class="Header-utils Grid-cell">
+      	        
+        <div class="Header-search" id="header-search">
+									<form method="get" class="Form" action="https://web.archive.org/web/20211107012005/https://www.comune.fontanafredda.pn.it/po/search.php" accept-charset="utf-8">
+			  <div class="Form-field Form-field--withPlaceholder Grid u-background-white u-color-grey-30 u-borderRadius-s" role="search">
+			    <input value="" name="q" id="q" class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderRadius-s" required="">
+			    <label class="Form-label u-color-grey-50 u-text-r-xxs" for="q">cerca nel sito</label>
+			    <button class="Grid-cell u-sizeFit Icon-search Icon--rotated u-color-grey-50 u-padding-all-s u-textWeight-700" title="Avvia la ricerca" aria-label="Avvia la ricerca">
+			  </button>
+			  </div>
+			</form>
+			        </div>
+      </div>
+
+      <div class="Header-toggle Grid-cell">
+        <a class="Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock u-lg-hidden u-md-hidden" href="#menu" aria-controls="menu" aria-label="accedi al menu" title="accedi al menu">
+          <span class="Hamburger-toggle" role="presentation"></span>
+          <span class="Header-toggleText" role="presentation">Menu</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <!-- Header-navbar -->
+    
+    <div class="Headroom-hideme u-textCenter u-hidden u-sm-hidden u-md-block u-lg-block" id="hMegaMenuDivParent">
+      <nav class="Megamenu Megamenu--default js-megamenu  is-ready" data-rel=".Offcanvas .Treeview" role="navigation"><ul class="Megamenu-list Megamenu">			<li class="Megamenu-item">
+				<a data-megamenu-class="" accesskey="H" href="https://web.archive.org/web/20211107012005/https://www.comune.fontanafredda.pn.it/hh/index.php" id="megamenu-1636248020495-1">Homepage</a></li>			<li class="Megamenu-item">
+				<a data-megamenu-class="" accesskey="F" href="javascript:void(0)" id="megamenu-1636248020505-2" aria-haspopup="true" aria-controls="megamenu-1636248020505-3" aria-expanded="false">Il Comune informa<span aria-label="expand"></span></a><div class="Megamenu-subnav" id="megamenu-1636248020505-3" role="group" aria-expanded="false" aria-hidden="true" aria-labelledby="megamenu-1636248020505-2" x-placement="bottom" style="position: absolute; transform: translate3d(-216px, 57px, 0px); top: 0px; left: 0px; will-change: transform;"><ul class="Megamenu-subnavGroup"><li><a>Accesso agli atti<span aria-label="expand"></span></a><div>Il servizio consente la consultazione degli atti amministrativi in corso di pubblicazione all'Albo Pretorio on-line, nonchè degli atti la cui pubblicazione è scaduta.</div><ul><li id="halley-menu-item-93"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/mc/mc_p_ricerca.php" target="_self">Albo pretorio</a></li><li id="halley-menu-item-94"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/mc/mc_matri_p_ricerca.php" target="_self">Pubblicazioni di matrimonio</a></li><li id="halley-menu-item-95"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/zf/index.php/atti-amministrativi/delibere" target="_self">Delibere</a></li><li id="halley-menu-item-96"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/zf/index.php/atti-amministrativi/determine" target="_self">Determine</a></li><li id="halley-menu-item-97"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/zf/index.php/atti-amministrativi/ordinanze" target="_self">Ordinanze</a></li><li id="halley-menu-item-317"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/zf/index.php/atti-amministrativi/decreti" target="_self">Decreti</a></li></ul></li></ul><ul class="Megamenu-subnavGroup"><li><a>Amministrazione trasparente<span aria-label="expand"></span></a><div>In questa sezione sono pubblicati, raggruppati secondo le indicazioni di legge, documenti, informazioni e dati concernenti l'organizzazione dell' amministrazione, le attivita' e le sue modalita' di realizzazione.</div><ul><li id="halley-menu-item-237"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/zf/index.php/trasparenza/index/index" target="_self">Amministrazione trasparente</a></li></ul></li></ul><ul class="Megamenu-subnavGroup"><li><a>Il comune informa<span aria-label="expand"></span></a><ul><li id="halley-menu-item-344"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/zf/index.php/modulistica" target="_self">Modulistica</a></li><li id="halley-menu-item-345"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/zf/index.php/galleria-fotografica/index/index" target="_self">Gallery</a></li><li id="halley-menu-item-383"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/zf/index.php/servizi-aggiuntivi/index/index/idtesto/148" target="_self">pagoPA</a></li></ul></li></ul><span class="Icon-drop-down Dropdown-arrow u-color-white" style="left: 427px;"></span></div></li>			<li class="Megamenu-item">
+				<a data-megamenu-class="" accesskey="V" href="javascript:void(0)" id="megamenu-1636248020514-4" aria-haspopup="true" aria-controls="megamenu-1636248020514-5" aria-expanded="false">Vivere a Fontanafredda<span aria-label="expand"></span></a><div class="Megamenu-subnav" id="megamenu-1636248020514-5" role="group" aria-expanded="false" aria-hidden="true" aria-labelledby="megamenu-1636248020514-4" x-placement="bottom" style="position: absolute; transform: translate3d(261px, 57px, 0px); top: 0px; left: 0px; will-change: transform;"><ul class="Megamenu-subnavGroup"><li><a>Cosa e dove<span aria-label="expand"></span></a><ul><li id="halley-menu-item-356"><a href="https://web.archive.org/web/20211107012005/https://sac5.halleysac.it/c093022/zf/index.php/uffici/index/index" target="_self">Uffici pubblici</a></li><li id="halley-menu-item-350"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/zf/index.php/servizi-aggiuntivi/index/index/idtesto/60" target="_self">Scuola</a></li><li id="halley-menu-item-354"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/zf/index.php/uffici/index/detail/id/26" target="_self">Biblioteca Comunale</a></li><li id="halley-menu-item-375"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/zf/index.php/servizi-aggiuntivi/index/index/idtesto/139" target="_self">Ecopiazzola</a></li><li id="halley-menu-item-346"><a href="https://web.archive.org/web/20211107012005/http://www.parrocchiemap.it/parrocchiemap/ricerca_pm.jsp?diocesi=Concordia - Pordenone&amp;tiporicerca=tipo_libera&amp;lay=elenco&amp;denominazione=fontanafredda" target="_blank">Parrocchie</a></li><li id="halley-menu-item-351"><a href="https://web.archive.org/web/20211107012005/https://www.farmaciediturno.org/comune.asp?cod=93022" target="_blank">Farmacie e parafarmacie</a></li><li id="halley-menu-item-352"><a href="https://web.archive.org/web/20211107012005/https://asfo.sanita.fvg.it/it/medici/dettaglio/?medico=48785" target="_blank">Medici di base, pediatri e dentisti</a></li><li id="halley-menu-item-355"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/zf/index.php/servizi-aggiuntivi/index/index/idtesto/103" target="_self">Mercato</a></li><li id="halley-menu-item-359"><a href="https://web.archive.org/web/20211107012005/https://prm.rfi.it/qo_prm/QO_Partenze_SiPMR.aspx?Id=1243&amp;lin=&amp;dalle=04.00&amp;alle=08.00&amp;ora=04.00&amp;guid=" target="_blank">Stazione dei treni</a></li><li id="halley-menu-item-357"><a href="https://web.archive.org/web/20211107012005/https://sac5.halleysac.it/c093022/zf/index.php/uffici/index/detail/id/25" target="_self">Polizia Locale</a></li><li id="halley-menu-item-358"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/zf/index.php/servizi-aggiuntivi/index/index/idtesto/104" target="_self">Stazione dei Carabinieri</a></li><li id="halley-menu-item-368"><a href="/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/zf/index.php/servizi-aggiuntivi/index/index/idtesto/53" target="_self">Associazioni</a></li></ul></li></ul><span class="Icon-drop-down Dropdown-arrow u-color-white" style="left: 157px;"></span></div></li>			<li class="Megamenu-item">
+				<a data-megamenu-class="" accesskey="T" href="https://web.archive.org/web/20211107012005/https://www.comune.fontanafredda.pn.it/c093022/hh/login.php" id="megamenu-1636248020518-6">Intranet</a></li></ul></nav>
+  </div>
+    
+</header>
+
+    
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
